@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jan Fiołka" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamborghini</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Rajdhani:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="assets/lambo.png" draggable="false">
+                </div>
+                <ul>
+                    <li>Strona główna</li>
+                    <li>O nas</li>
+                    <li>Nowe samochody</li>
+                    <li>Używane samochody</li>
+                    <li>Kontakt</li>
+                </ul>
+            </nav>
+            <img src="assets/menu.png" class="mobile" onclick="openMobileMenu();">
+        </header>
+        <div class="lamborghini">
+            <img src="assets/lamborghini.png" draggable="false">
+            <img src="assets/lambo.png" draggable="false">
+            <span>
+                <br>
+                REAL EMOTIONS </br>
+                SHAPE THE </br>
+                FUTURE
+            </span>
+        </div>
+        <main>
+            <section>
+                <div class="cars">
+                    <figure>
+                        <img src="assets/huracan.jpg" draggable="false">
+                        <figcaption>
+                            Lamborghini Huracan
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gallardo.jpg" draggable="false">
+                        <figcaption>
+                            Lamborghini Gallardo
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/sian.jpg" draggable="false">
+                        <figcaption>
+                            Lamborghini Sian
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="upper">
+                <div class="slogan">
+                    <h2>NASZ SLOGAN</h2>
+                    <img src="assets/wemadeit.jpg">
+                </div>
+                <div class="film">
+                    <h2>ZOBACZ FILM</h2>
+                    <iframe width="253" height="172.5" src="https://www.youtube.com/embed/SdA4puccRpE" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="portale">
+                    <h2>PORTALE SPOŁECZNOŚCIOWE</h2>
+                    <img src="assets/facebook.png">
+                    <img src="assets/twitter.png">
+                    <img src="assets/instagram.png">
+                </div>
+            </div>
+            <div class="lower">
+                <ul>
+                    <li>Kontakt</li>
+                    <li>Grupa Audi</li>
+                </ul>
+                <ul>
+                    <li>Informacje prawne</li>
+                    <li>Polityka cookies</li>
+                    <li>&copy; Lamborghini 2020</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function openMobileMenu() {
+            let state = document.getElementsByTagName('nav')[0].classList.toggle("showMenu");
+        }
+    </script>
+</body>
+
+</html>
